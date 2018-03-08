@@ -27,7 +27,7 @@ export class PetitionsService {
   }
   getUsers() {
     //let headers = new Headers({'Content-Type':'application/x-www-form-urlencoded'});
-    return this._http.get('http://localhost:8080/gpp/api/users/')
+    return this._http.get('http://localhost:8080')
       .map(response => response.json());
   }
 }
