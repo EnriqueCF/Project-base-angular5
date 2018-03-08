@@ -1,0 +1,22 @@
+<div>
+  <h3>{{title}}</h3>
+  <form #addItemForm="ngForm" (ngSubmit)="onSubmit()" id="addItemForm" class="col-lg-10">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputName">Nombre </label>
+          <input type="text" class="form-control" id="inputName" placeholder="Nombre" #nombre="ngModel" name="nombre" [(ngModel)]="newItem.name" required />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputSurname">Apellidos</label>
+          <input type="text" class="form-control" id="inputSurname" placeholder="Apellidos" name="surname" #surname="ngModel" [(ngModel)]="newItem.surname" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="nombre@ejemplo.es" name="email" #email="ngModel" [(ngModel)]="newItem.email" required />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="!addItemForm.form.valid">Guardar</button>
+  </form>
+</div>

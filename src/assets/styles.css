@@ -1,0 +1,11 @@
+#footer{
+  margin-top: 50px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+#nav ul li a:hover{
+  text-decoration: none;
+}
+.activated{
+  border-bottom: 2px solid important!;
+}
